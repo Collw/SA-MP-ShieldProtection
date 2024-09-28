@@ -4,6 +4,8 @@
 
 - [@Collw](https://www.github.com/Collw)
 
+##
+
 > [!NOTE]
 > O **SA-MP Shield Protection** é um conjunto abrangente de sistemas de segurança projetados especificamente para o **San Andreas Multiplayer (SA:MP)**, com o objetivo de proteger servidores contra fraudes, trapaças e comportamentos indesejados, garantindo uma experiência de jogo justa e segura para todos os jogadores.
 
