@@ -1,9 +1,31 @@
+/*
+    --------------------------------------------------------
+    |                ShieldProtection System                |
+    |                                                       |
+    |            Sistema de Prote√ß√£o: AntiCbug              |
+    |                 Created by Collw                      |
+    |                   Vers√£o: 1.4.3                       |
+    --------------------------------------------------------
+
+    Descri√ß√£o:
+    O sistema AntiCbug √© parte integrante do ShieldProtection, projetado
+    para monitorar e impedir o uso indevido do C-Bug em servidores SA-MP.
+    Detecta automaticamente jogadores que utilizam o C-Bug e notifica
+    a equipe de administra√ß√£o, permitindo medidas r√°pidas para manter
+    a justi√ßa e integridade do jogo.
+
+    Observa√ß√£o:
+    Sistema totalmente configur√°vel, adapt√°vel √†s regras do servidor.
+*/
+
+
+
 #include <a_samp>
 
 #define COR_VERMELHA 0xAA3333AA
 
 #undef MAX_PLAYERS
-#define MAX_PLAYERS 500 // Altere para a contagem m·xima de jogadores do seu servidor.
+#define MAX_PLAYERS 500 // Altere para a contagem m√°xima de jogadores do seu servidor.
 
 #define MAX_SLOTS 48
 
@@ -14,15 +36,15 @@ new Municao[MAX_PLAYERS][MAX_SLOTS];
 
 new NomesArmas[][32] = {
     {"Soco"}, // 0
-    {"Soco InglÍs"}, // 1
+    {"Soco Ingl√™s"}, // 1
     {"Clube de Golfe"}, // 2
     {"Cacetete"}, // 3
     {"Faca"}, // 4
     {"Bat de Baseball"}, // 5
-    {"P·"}, // 6
+    {"P√°"}, // 6
     {"Taco de Bilhar"}, // 7
     {"Katana"}, // 8
-    {"Serra ElÈtrica"}, // 9
+    {"Serra El√©trica"}, // 9
     {"Dildo Roxo"}, // 10
     {"Vibrador"}, // 11
     {"Vibrador"}, // 12
@@ -30,7 +52,7 @@ new NomesArmas[][32] = {
     {"Flores"}, // 14
     {"Cane"}, // 15
     {"Granada"}, // 16
-    {"G·s LacrimogÍneo"}, // 17
+    {"G√°s Lacrimog√™neo"}, // 17
     {"Molotov"}, // 18
     {" "}, // 19
     {" "}, // 20
@@ -46,19 +68,19 @@ new NomesArmas[][32] = {
     {"AK-47"}, // 30
     {"M4"}, // 31
     {"Tec-9"}, // 32
-    {"Rifle de CaÁa"}, // 33
-    {"Rifle de Precis„o"}, // 34
-    {"LanÁador de Foguetes"}, // 35
-    {"LanÁador de Foguetes Guiados"}, // 36
-    {"LanÁa-Chamas"}, // 37
+    {"Rifle de Ca√ßa"}, // 33
+    {"Rifle de Precis√£o"}, // 34
+    {"Lan√ßador de Foguetes"}, // 35
+    {"Lan√ßador de Foguetes Guiados"}, // 36
+    {"Lan√ßa-Chamas"}, // 37
     {"Minigun"}, // 38
-    {"Cargador de SatÈlite"}, // 39
+    {"Cargador de Sat√©lite"}, // 39
     {"Detonador"}, // 40
     {"Spray"}, // 41
-    {"Extintor de IncÍndio"}, // 42
-    {"C‚mera"}, // 43
-    {"”culos de Vis„o Noturna"}, // 44
-    {"”culos de Vis„o Infravermelha"}, // 45
+    {"Extintor de Inc√™ndio"}, // 42
+    {"C√¢mera"}, // 43
+    {"√ìculos de Vis√£o Noturna"}, // 44
+    {"√ìculos de Vis√£o Infravermelha"}, // 45
     {"Paraquedas"}, // 46
     {"Pistola Falsa"} // 47
 };
@@ -151,18 +173,18 @@ public OnPlayerCBug(playerid) {
     format(mensagem, sizeof(mensagem), "O sistema automatico expulsou %s por tentar usar C-Bug com a arma (%s!)", nomeJogador, NomesArmas[IDArma[playerid]]);
     SendClientMessageToAll(COR_VERMELHA, mensagem);
     
-    // Adicionando o di·logo
+    // Adicionando o di√°logo
     new dialogMensagem[512]; // Tamanho aumentado para conter toda a mensagem
 
-    format(dialogMensagem, sizeof(dialogMensagem),  "{ffffff}VocÍ foi expulso por tentar usar {ff0000}C-Bug{ffffff} com a arma (%s)!\n", NomesArmas[IDArma[playerid]]);
-    strcat(dialogMensagem, "{ffffff}A utilizaÁ„o do C-Bug È considerada uma violaÁ„o das regras do servidor.\n\n");
-    strcat(dialogMensagem, "{ffffff}Repetidas tentativas de uso poder„o resultar em puniÁıes adicionais, incluindo {ff0000}bans{ffffff} tempor·rios ou permanentes.\n");
+    format(dialogMensagem, sizeof(dialogMensagem),  "{ffffff}Voc√™ foi expulso por tentar usar {ff0000}C-Bug{ffffff} com a arma (%s)!\n", NomesArmas[IDArma[playerid]]);
+    strcat(dialogMensagem, "{ffffff}A utiliza√ß√£o do C-Bug √© considerada uma viola√ß√£o das regras do servidor.\n\n");
+    strcat(dialogMensagem, "{ffffff}Repetidas tentativas de uso poder√£o resultar em puni√ß√µes adicionais, incluindo {ff0000}bans{ffffff} tempor√°rios ou permanentes.\n");
 
     ShowPlayerDialog(playerid, 1, DIALOG_STYLE_MSGBOX, "{FF0000}ShieldProtection {FFFFFF}- Created by {ff00ff}Collw", dialogMensagem, "OK", "");
 
 
     
-    // Atrasar a expuls„o para garantir que o di·logo seja exibido
+    // Atrasar a expuls√£o para garantir que o di√°logo seja exibido
     SetTimerEx("KickPlayer", 100, 0, "d", playerid);
     
     VerificaAgachamento[playerid] = 0;
