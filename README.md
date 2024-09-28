@@ -21,11 +21,6 @@
 > [!CAUTION]
 > Esteja ciente dos riscos associados a fraudes e trapaças, que podem comprometer a experiência de jogo dos jogadores. A implementação correta do **SA-MP Shield Protection** é crucial para mitigar esses riscos.
 
-## Seção recolhida
-
-Você pode recolher temporariamente seções do seu Markdown criando uma seção expandida que o leitor pode optar por expandir. Por exemplo, quando você deseja incluir detalhes técnicos em um comentário do problema que pode não ser relevante ou interessante para todos os leitores, você pode colocar esses detalhes em uma seção recolhida.
-
-Qualquer Markdown dentro do bloco `<details>` estará recolhido até que o leitor clique em para expandir os detalhes.
 
 <details>
 
