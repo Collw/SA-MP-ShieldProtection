@@ -36,7 +36,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull r
 Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
 
 - **Autor**: Collw
-- **Discord**: [Seu Discord]
+- **Discord**: [ycollw]
 
 ## Versão
 - **Versão**: 1.4.3
