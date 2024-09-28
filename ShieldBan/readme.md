@@ -59,8 +59,6 @@ O **ShieldBan** faz parte do sistema de proteção **ShieldProtection**, desenvo
     Se voce foi banido por engano, entre em contato com nossa equipe pelo Discord.
 
     Discord: [LINK DISCORD]
-    
-    ShieldProtection - Crated by Collw
     ```
 
 - **Desbanimento**: O comando `/unban [Nome]` remove o banimento do jogador e envia uma mensagem para todos no servidor:
