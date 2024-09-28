@@ -92,8 +92,8 @@ O sistema é altamente personalizável. Caso queira alterar o texto dos diálogo
 Para dúvidas, sugestões ou melhorias, entre em contato com o desenvolvedor:
 
 - **Desenvolvedor:** Collw
-- **Discord:** [LINK DO DISCORD]
-- **Email:** [EMAIL_DO_DESENVOLVEDOR]
+- **Discord:** ycollw
+- **Email:** collwdev@gmail.com
 
 ## Licença
 
