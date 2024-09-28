@@ -8,7 +8,7 @@
 
 > [!NOTE]
 > O **SA-MP Shield Protection** é um conjunto abrangente de sistemas de segurança projetados especificamente para o **San Andreas Multiplayer (SA:MP)**, com o objetivo de proteger servidores contra fraudes, trapaças e comportamentos indesejados, garantindo uma experiência de jogo justa e segura para todos os jogadores.
-Compatível com gamemodes implementadas utilizando ```pawn #include <a_samp>``` e ```pawn #include <open.mp>```, garantindo integração fluida e funcionalidade aprimorada.
+> Compatível com gamemodes implementadas utilizando ```pawn #include <a_samp>``` e ```pawn #include <open.mp>```, garantindo integração fluida e funcionalidade aprimorada.
 
 > [!TIP]
 > Você tem a oportunidade de se tornar um coautor do sistema Shield Protection. Basta contribuir com novos sistemas e funcionalidades que possam aprimorar a proteção contra trapaças no San Andreas Multiplayer e Open Multiplayer. Suas ideias e desenvolvimentos ajudarão a fortalecer a segurança dos servidores e a manter um ambiente de jogo justo para todos os jogadores.
