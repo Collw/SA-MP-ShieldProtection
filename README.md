@@ -11,7 +11,7 @@
 > Compatível com gamemodes implementadas utilizando ``` #include <a_samp>``` e ``` #include <open.mp>```, garantindo integração fluida e funcionalidade aprimorada.
 
 > [!TIP]
-> Você tem a oportunidade de se tornar um coautor do sistema Shield Protection. Basta contribuir com novos sistemas e funcionalidades que possam aprimorar a proteção contra trapaças no San Andreas Multiplayer e Open Multiplayer. Suas ideias e desenvolvimentos ajudarão a fortalecer a segurança dos servidores e a manter um ambiente de jogo justo para todos os jogadores.
+> Você tem a oportunidade de se tornar um coautor do sistema Shield Protection. Basta contribuir com novos sistemas e funcionalidades que possam aprimorar a proteção contra trapaças no San Andreas Multiplayer e Open Multiplayer. Suas ideias e desenvolvimentos ajudarão a fortalecer a segurança dos servidores e a manter um ambiente de jogo justo para todos os jogadores. Importante que o código seja compilado na versão mais recente do compilador.
 
 > [!IMPORTANT]
 > Este repositório está em constante evolução. Futuras atualizações incluirão a detecção avançada de hacks e melhorias na interface de administração.
